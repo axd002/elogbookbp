@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: jekovariable;
+            src: url(https://elogbedahunpad.com:53214/fonts/jekovariable.ttf);
+        }
+        @font-face {
+            font-family: liniksans;
+            src: url(https://elogbedahunpad.com:53214/fonts/LinikSans-Medium.ttf);
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: liniksans;
+            src: url(https://elogbedahunpad.com:53214/fonts/LinikSans-Light.ttf);
+            font-weight: 300;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #000;
+            text-decoration: none; /* no underline */
+        }
+        .container {
+            margin: 50px 100px;
+            display: flex;
+            align-items: flex-start;
+            gap: 50px; /* Add gap between the left and right sections */
+        }
+        .left, .right {
+            flex: 1 1 0px;
+            user-select: none;
+        }
+        .container .left .logo {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .photo {
+            margin-bottom: 30px; /* Add margin bottom to separate the image from the text below */
+        }
+        .photo img {
+            max-height: 700px;
+            max-width: 700px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .btn-user {
+            display: inline-block;
+            margin-top: 10px; /* Reduce margin-top to bring buttons closer to the text */
+            padding: 15px;
+            background-color: rgb(255, 47, 238);
+            border-radius: 18px;
+            width: 375px;
+            text-align: center;
+            font-family: liniksans;
+            color: white;
+            font-size: 22px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-family: liniksans;
+            font-size: 18px;
+            color: #000;
+        }
+    </style>
+    <title>Elogbook PPDS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <div>
+                    <img src="https://elogbedahunpad.com:53214/images/logo-unpad-big.png" alt="" style="height: 100px; margin-right: 10px;"> <!-- Added margin-right -->
+                </div>
+                <div>
+                    <img src="https://elogbedahunpad.com:53214/images/logo-rs-big.png" alt="" style="height: 100px;">
+                </div>
+            </div>
+            <div class="photo">
+                <img src="https://i.ibb.co.com/TbnTv5h/Wallpaper01.jpg" alt="Image">
+            </div>
+        </div>
+        <div class="right">
+            <div style="font-family: jekovariable;font-size: 76px;font-weight: 100;margin-bottom: 15px;">Elogbook</div>
+            <div style="font-family: liniksans;font-size: 23px;margin-bottom: 30px;">
+                Selamat Datang di Sistem Pencatatan Elektronik Kegiatan Pendidikan Program Studi <strong>Ilmu Bedah Plastik Rekonstruksi dan Estetik UNPAD</strong>
+            </div>
+            <div style="font-family: liniksans; font-size: larger; margin-bottom: 10px;">Pilih kategori user:</div> <!-- Reduce margin-bottom -->
+            <a class="btn-user" style="background-color: #007ff3;" href="https://elogbedahunpad.com:53214/hT58CfOqky!F7Be/tendik/login">Tenaga Pendidik</a>
+            <a class="btn-user" style="background-color: #0fbb00;" href="https://elogbedahunpad.com:53214/hT58CfOqky!F7Be/standik/login">Dosen</a>
+            <a class="btn-user" style="background-color: #ff2b84;" href="https://elogbedahunpad.com:53214/hT58CfOqky!F7Be/ppds/login">Mahasiswa PPDS</a>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Bedah Plastik UNPAD 2024
+    </div>
+</body>
+</html>
